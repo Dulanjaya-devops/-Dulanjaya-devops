@@ -18,8 +18,3 @@ module "ec2_instance" {
 }
 
 
-# Jenking server public access URL
-output "jenkins_url" {
-  description = "The Jenkins server URL"
-  value       = "http://${module.ec2_instance.instance_public_ip}:8080"
-}
