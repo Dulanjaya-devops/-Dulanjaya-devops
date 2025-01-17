@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warranty Dashboard</title>
+</head>
+<body>
+    <h1>IT Equipment Warranty Management</h1>
+    <form id="warrantyForm">
+        <input type="text" id="equipment_id" placeholder="Equipment ID" required>
+        <input type="text" id="equipment_name" placeholder="Equipment Name" required>
+        <input type="text" id="warranty_period" placeholder="Warranty Period (years)" required>
+        <input type="date" id="purchase_date" required>
+        <button type="submit">Add Warranty</button>
+    </form>
+    <h2>Dashboard</h2>
+    <table border="1" id="warrantyTable">
+        <thead>
+            <tr>
+                <th>Equipment ID</th>
+                <th>Equipment Name</th>
+                <th>Warranty Period</th>
+                <th>Purchase Date</th>
+                <th>Expiration Date</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
