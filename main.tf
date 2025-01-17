@@ -6,7 +6,7 @@ provider "aws" {
 
 # Calling module from loacal path
 module "aws_security_group_sg" {
-  source      = "./modules/security_Group"  # Adjust the path if necessary
+  source      = "./modules/security-group"  # Adjust the path if necessary
   name        = var.name
   description = var.description
   vpc_id      = var.vpc_id
